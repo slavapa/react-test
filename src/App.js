@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Link from './Link';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">     
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -17,7 +18,12 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> 
+        <div style={{marginTop: '20px', backgroundColor: 'white', position: 'fixed', bottom: '0', width: '150px', height: '50px'}}>
+        <Link page="http://www.facebook.com">
+          <a href="http://www.facebook.com">FaceBook</a>
+        </Link>
+        </div>
     </div>
   );
 }
